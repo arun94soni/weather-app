@@ -5,7 +5,7 @@ import { weatherIcon } from '../../../utilities/IconsUtils';
 const DailyForecastItem = ({data, item, toggleTemperatureUnit, convertTemperature, isCelcius}) => {
   useEffect(() => {
     console.log('item--', item);
-  }, [])
+  }, [item])
 
   const str = item.temperature.substring(0,2);
   const number = parseInt(str);
